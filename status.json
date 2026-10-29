@@ -18,6 +18,14 @@
   ],
   "bots": [
     {
+      "name": "Chief of staff",
+      "role": "Routes everything",
+      "zone": "Chief's office",
+      "color": "#F28B82",
+      "lastActive": "2026-10-28T21:26:00-04:00",
+      "task": "Refreshing the Bot Office"
+    },
+    {
       "name": "Calendar",
       "role": "Schedule and meetings",
       "zone": "Howard Sales",
@@ -50,41 +58,9 @@
       "task": "Answered the morning check-in"
     },
     {
-      "name": "VersaNext",
-      "role": "Security reviews of all apps",
-      "zone": "VersaNext",
-      "color": "#78D9EC",
-      "lastActive": "2026-10-28T21:23:00-04:00",
-      "task": "Updating the portal sign-in"
-    },
-    {
-      "name": "TSShourtracker",
-      "role": "Field tech hour app",
-      "zone": "VersaNext",
-      "color": "#8AB4F8",
-      "lastActive": "2026-10-28T21:16:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
-    },
-    {
-      "name": "App Tester",
-      "role": "Stress tests every app",
-      "zone": "VersaNext",
-      "color": "#FDD663",
-      "lastActive": "2026-10-28T15:19:00-04:00",
-      "task": "Load-tested Fielder Version 12"
-    },
-    {
-      "name": "Script Shield",
-      "role": "Protects app code",
-      "zone": "VersaNext",
-      "color": "#B39DDB",
-      "lastActive": "2026-10-28T18:38:00-04:00",
-      "task": "Asking before deleting a site"
-    },
-    {
       "name": "Fielder Tree",
       "role": "Tree service app",
-      "zone": "App Builders",
+      "zone": "VersaNext apps",
       "color": "#A8DAB5",
       "lastActive": "2026-10-28T21:16:00-04:00",
       "task": "Confirmed its hosting on GitHub Pages"
@@ -92,7 +68,7 @@
     {
       "name": "Miller Tree",
       "role": "Tree company app",
-      "zone": "App Builders",
+      "zone": "VersaNext apps",
       "color": "#C58AF9",
       "lastActive": "2026-10-28T21:21:00-04:00",
       "task": "Checking where the Miller app is hosted"
@@ -100,7 +76,7 @@
     {
       "name": "Southern Concrete Coatings",
       "role": "Concrete coatings app",
-      "zone": "App Builders",
+      "zone": "VersaNext apps",
       "color": "#AECBFA",
       "lastActive": "2026-10-28T21:17:00-04:00",
       "task": "Confirmed its hosting on GitHub Pages"
@@ -108,7 +84,7 @@
     {
       "name": "Sparkle Tallahassee",
       "role": "Boutique staff app",
-      "zone": "App Builders",
+      "zone": "VersaNext apps",
       "color": "#FF8BCB",
       "lastActive": "2026-10-28T21:17:00-04:00",
       "task": "Confirmed its hosting on GitHub Pages"
@@ -116,7 +92,7 @@
     {
       "name": "Tift County Schools",
       "role": "Tift schools app",
-      "zone": "App Builders",
+      "zone": "VersaNext apps",
       "color": "#81C995",
       "lastActive": "2026-10-28T21:17:00-04:00",
       "task": "Confirmed its hosting on GitHub Pages"
@@ -124,10 +100,18 @@
     {
       "name": "Business Finance",
       "role": "Business books",
-      "zone": "Finance",
+      "zone": "TSS office",
       "color": "#81C995",
       "lastActive": null,
       "task": null
+    },
+    {
+      "name": "Amex Business",
+      "role": "Amex card activity",
+      "zone": "TSS office",
+      "color": "#8AB4F8",
+      "lastActive": "2026-10-28T08:37:00-04:00",
+      "task": "Introduced itself"
     },
     {
       "name": "Bill Pay",
@@ -146,28 +130,12 @@
       "task": "Reviewed recent charges"
     },
     {
-      "name": "Amex Business",
-      "role": "Amex card activity",
-      "zone": "Finance",
-      "color": "#8AB4F8",
-      "lastActive": "2026-10-28T08:37:00-04:00",
-      "task": "Introduced itself"
-    },
-    {
       "name": "Hyperliquid Trader",
       "role": "Trading desk",
       "zone": "Finance",
       "color": "#FDE293",
       "lastActive": "2026-10-28T14:17:00-04:00",
       "task": "Waiting on a transfer"
-    },
-    {
-      "name": "Chief of staff",
-      "role": "Routes everything",
-      "zone": "Ops",
-      "color": "#F28B82",
-      "lastActive": "2026-10-28T21:26:00-04:00",
-      "task": "Refreshing the Bot Office"
     },
     {
       "name": "Mail Watch TSS",
@@ -184,6 +152,38 @@
       "color": "#FFB3D9",
       "lastActive": "2026-10-28T20:21:00-04:00",
       "task": "Put two site changes live"
+    },
+    {
+      "name": "VersaNext",
+      "role": "Security reviews of all apps",
+      "zone": "VersaNext office",
+      "color": "#78D9EC",
+      "lastActive": "2026-10-28T21:23:00-04:00",
+      "task": "Updating the portal sign-in"
+    },
+    {
+      "name": "TSShourtracker",
+      "role": "Field tech hour app",
+      "zone": "VersaNext office",
+      "color": "#8AB4F8",
+      "lastActive": "2026-10-28T21:16:00-04:00",
+      "task": "Confirmed its hosting on GitHub Pages"
+    },
+    {
+      "name": "Script Shield",
+      "role": "Protects app code",
+      "zone": "VersaNext office",
+      "color": "#B39DDB",
+      "lastActive": "2026-10-28T18:38:00-04:00",
+      "task": "Asking before deleting a site"
+    },
+    {
+      "name": "App Tester",
+      "role": "Stress tests every app",
+      "zone": "VersaNext office",
+      "color": "#FDD663",
+      "lastActive": "2026-10-28T15:19:00-04:00",
+      "task": "Load-tested Fielder Version 12"
     }
   ]
 }
