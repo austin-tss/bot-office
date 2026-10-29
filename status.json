@@ -98,6 +98,14 @@
       "task": "Confirmed its hosting on GitHub Pages"
     },
     {
+      "name": "Mae Lynn",
+      "role": "Personal helper",
+      "zone": "VersaNext apps",
+      "color": "#FFB3D9",
+      "lastActive": "2026-10-28T20:21:00-04:00",
+      "task": "Put two site changes live"
+    },
+    {
       "name": "Business Finance",
       "role": "Business books",
       "zone": "TSS office",
@@ -144,14 +152,6 @@
       "color": "#CBF0F8",
       "lastActive": "2026-10-28T14:48:00-04:00",
       "task": "Passed a note to Personal Finance"
-    },
-    {
-      "name": "Mae Lynn",
-      "role": "Personal helper",
-      "zone": "Ops",
-      "color": "#FFB3D9",
-      "lastActive": "2026-10-28T20:21:00-04:00",
-      "task": "Put two site changes live"
     },
     {
       "name": "VersaNext",
