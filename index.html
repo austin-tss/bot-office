@@ -38,19 +38,19 @@ footer{color:var(--sub);font-size:12px;margin-top:14px}
 </main>
 <script>
 const cv=document.getElementById('c'),g=cv.getContext('2d'),W=1200,H=860;
-const CORR=430;
+const CORR=455;
 const ZONES={
- "Howard sales":{x:30,y:90,w:340,h:300,fl:"#fdeeee",cols:3},
- "App builders":{x:590,y:90,w:580,h:300,fl:"#eaf2fd",cols:4},
- "Finance":{x:30,y:470,w:480,h:360,fl:"#eaf7ee",cols:3},
- "Ops":{x:700,y:470,w:470,h:360,fl:"#fdf6e3",cols:3}};
-const MEET={x:390,y:90,w:180,h:300},COFFEE={x:530,y:470,w:150,h:360};
-const COFFEE_SPOTS=[[575,640],[625,660],[600,700],[650,610]];
+ "Howard sales":{x:30,y:90,w:340,h:330,fl:"#fdeeee",cols:2},
+ "App builders":{x:590,y:90,w:580,h:330,fl:"#eaf2fd",cols:4},
+ "Finance":{x:30,y:495,w:480,h:340,fl:"#eaf7ee",cols:3},
+ "Ops":{x:700,y:495,w:470,h:340,fl:"#fdf6e3",cols:3}};
+const MEET={x:390,y:90,w:180,h:330},COFFEE={x:530,y:495,w:150,h:340};
+const COFFEE_SPOTS=[[575,665],[625,685],[600,725],[650,640]];
 let data=null,bots=[],sel=null,t0=performance.now();
 function etHour(){const s=new Date().toLocaleString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'numeric',hour12:false});const [h,m]=s.split(':').map(Number);return (h%24)+m/60}
 function ago(ms){if(ms==null)return'unknown';const m=Math.round(ms/60000);if(m<60)return m+'m ago';const h=Math.floor(m/60);if(h<48)return h+'h '+(m%60)+'m ago';return Math.floor(h/24)+'d ago'}
 function layout(list){const cnt={};return list.map(b=>{const z=ZONES[b.zone]||ZONES.Ops;const i=cnt[b.zone]=(cnt[b.zone]||0);cnt[b.zone]++;
- const sx=(z.w-40)/z.cols;const dx=z.x+20+sx*(i%z.cols)+sx/2,dy=z.y+70+Math.floor(i/z.cols)*120;return{dx,dy,seat:[dx,dy+38]}})}
+ const sx=(z.w-40)/z.cols;const dx=z.x+20+sx*(i%z.cols)+sx/2,dy=z.y+70+Math.floor(i/z.cols)*150;return{dx,dy,seat:[dx,dy+38]}})}
 async function load(){try{const r=await fetch('status.json?t='+Date.now(),{cache:'no-store'});const d=await r.json();apply(d)}catch(e){document.getElementById('asof').textContent='Could not load status.json'}}
 function apply(d){const asOf=Date.parse(d.asOf);const win=(d.workingWindowMin||15)*60000;const L=layout(d.bots);
  const old={};bots.forEach(b=>old[b.name]=b);
@@ -108,10 +108,10 @@ function drawRoom(){const h=etHour(),[s1,s2]=sky(h);
  rr(COFFEE.x,COFFEE.y,COFFEE.w,COFFEE.h,14,'#fbf0e4','#e2c9ac');g.fillStyle='#5a4e42';g.fillText('Coffee bar',COFFEE.x+14,COFFEE.y+24);
  rr(COFFEE.x+14,COFFEE.y+40,122,34,6,'#8a6a4f');rr(COFFEE.x+24,COFFEE.y+44,26,24,4,'#3d3d3d');g.fillStyle='#e44';g.fillRect(COFFEE.x+30,COFFEE.y+50,4,4);
  rr(COFFEE.x+60,COFFEE.y+46,18,20,3,'#f2f2f2','#aaa');rr(COFFEE.x+90,COFFEE.y+48,34,16,8,'#f5c26b');
- g.fillStyle='#a8743f';g.beginPath();g.arc(COFFEE.x+75,COFFEE.y+190,30,0,7);g.fill();plant(COFFEE.x+30,COFFEE.y+320,1.1);plant(COFFEE.x+120,COFFEE.y+320,1.1);
+ g.fillStyle='#a8743f';g.beginPath();g.arc(COFFEE.x+75,COFFEE.y+190,30,0,7);g.fill();plant(COFFEE.x+30,COFFEE.y+305,1.1);plant(COFFEE.x+120,COFFEE.y+305,1.1);
  // corridor rug
  rr(30,CORR-28,1140,56,28,'#e6d6bd');g.setLineDash([10,10]);g.strokeStyle='#d6c3a5';g.lineWidth=2;g.beginPath();g.moveTo(60,CORR);g.lineTo(1140,CORR);g.stroke();g.setLineDash([]);
- [[45,105],[355,105],[1155,105],[45,815],[1155,815],[515,815]].forEach(([x,y])=>plant(x,y,0.8))}
+ [[355,105],[1155,105],[45,815],[1155,815],[515,815]].forEach(([x,y])=>plant(x,y,0.8))}
 function drawDesk(b,t){const x=b.dx,y=b.dy,w=b.st=='working';
  g.fillStyle='#0000001a';g.fillRect(x-50,y-20,104,46);rr(x-52,y-24,104,44,6,'#c9a27a','#9c7a55');
  rr(x-20,y-40,40,26,4,'#2f3640');const glow=w?(0.75+0.25*Math.sin(t*4)):0;rr(x-17,y-37,34,20,2,w?`rgba(120,230,160,${glow})`:'#4c5866');
