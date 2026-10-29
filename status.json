@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-28T21:26:00-04:00",
-  "asOfLabel": "9:26 PM ET, Oct 28",
+  "asOf": "2026-10-28T22:01:00-04:00",
+  "asOfLabel": "10:01 PM ET, Oct 28",
   "workingWindowMin": 15,
   "messages": [
     {
@@ -8,12 +8,6 @@
       "to": "Chief of staff",
       "at": "2026-10-28T21:17:00-04:00",
       "text": "Hosting update"
-    },
-    {
-      "from": "TSShourtracker",
-      "to": "Chief of staff",
-      "at": "2026-10-28T20:38:00-04:00",
-      "text": "VersaNext questions"
     }
   ],
   "bots": [
@@ -22,7 +16,7 @@
       "role": "Routes everything",
       "zone": "Chief's office",
       "color": "#F28B82",
-      "lastActive": "2026-10-28T21:26:00-04:00",
+      "lastActive": "2026-10-28T22:01:00-04:00",
       "task": "Refreshing the Bot Office"
     },
     {
