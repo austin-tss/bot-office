@@ -43,10 +43,10 @@ const CORR=455;
 const ZONES={
  "Chief's office":{x:30,y:90,w:220,h:330,fl:"#fbeedd",cols:1,boss:1},
  "VersaNext Lab":{x:265,y:90,w:490,h:330,fl:"#eaf2fd",cols:3},
- "TSS office":{x:770,y:90,w:400,h:330,fl:"#eef0fb",cols:2},
+ "VersaNext office":{x:770,y:90,w:400,h:330,fl:"#e8f8fb",cols:2},
  "Finance":{x:30,y:495,w:250,h:340,fl:"#eaf7ee",cols:2},
  "Howard Sales":{x:295,y:495,w:250,h:340,fl:"#fdeeee",cols:2},
- "VersaNext office":{x:865,y:495,w:305,h:340,fl:"#e8f8fb",cols:2}};
+ "TSS office":{x:865,y:495,w:305,h:340,fl:"#eef0fb",cols:2}};
 const MEET={x:560,y:495,w:145,h:340},COFFEE={x:720,y:495,w:130,h:340};
 const COFFEE_SPOTS=[[750,665],[800,685],[775,725],[820,640]];
 let data=null,bots=[],sel=null,t0=performance.now();
@@ -117,6 +117,7 @@ function drawRoom(){const h=etHour(),[s1,s2]=sky(h);
  // corridor rug
  rr(30,CORR-28,1140,56,28,'#e6d6bd');g.setLineDash([10,10]);g.strokeStyle='#d6c3a5';g.lineWidth=2;g.beginPath();g.moveTo(60,CORR);g.lineTo(1140,CORR);g.stroke();g.setLineDash([]);
  [[235,105],[740,105],[1155,815],[45,815]].forEach(([x,y])=>plant(x,y,0.8))}
+function drawDoor(){const a=ZONES['VersaNext Lab'],b=ZONES['VersaNext office'];const x=a.x+a.w-4,y=a.y+150;rr(x,y,b.x-x+4,60,4,'#c9a27a','#9c7a55');g.fillStyle='#e8f8fb';g.fillRect(x+4,y+4,b.x-x-4,52)}
 function drawPortal(){const z=ZONES['VersaNext office'];const x=z.x+172,y=z.y+8;rr(x,y,126,24,6,'#1f6f8b','#155366');g.fillStyle='#fff';g.font='600 11px system-ui';g.fillText('🚪 Employee Portal ↗',x+8,y+16)}
 const MTG={x:290,y:490,w:565,h:350,cx:572,cy:668,rx:225,ry:118};
 function drawMeeting(){if(!data||!data.meeting||!data.meeting.active)return;rr(MTG.x,MTG.y,MTG.w,MTG.h,16,'#f3eefb','#b9a6dc');g.fillStyle='#5a4e42';g.font='600 16px system-ui';g.fillText('All-hands meeting room',MTG.x+14,MTG.y+24);
@@ -146,7 +147,7 @@ function drawBot(b,t){const sit=b.mode!='meeting'&&!b.walking&&b.st=='working'&&
  if(sel&&sel.name==b.name){g.strokeStyle='#4a7bd0';g.lineWidth=2;g.beginPath();g.arc(b.x,b.y,20,0,7);g.stroke()}}
 let last=performance.now();
 function frame(now){const dt=Math.min(.05,(now-last)/1000);last=now;const t=(now-t0)/1000;drawRoom();
- if(data){bots.forEach(b=>think(b,dt));drawPortal();bots.forEach(b=>drawDesk(b,t));drawMeeting();[...bots].sort((a,b)=>a.y-b.y).forEach(b=>drawBot(b,t));drawMeetLabels()}
+ if(data){bots.forEach(b=>think(b,dt));drawDoor();drawPortal();bots.forEach(b=>drawDesk(b,t));drawMeeting();[...bots].sort((a,b)=>a.y-b.y).forEach(b=>drawBot(b,t));drawMeetLabels()}
  requestAnimationFrame(frame)}
 if(!CanvasRenderingContext2D.prototype.roundRect)CanvasRenderingContext2D.prototype.roundRect=function(x,y,w,h,r){this.moveTo(x+r,y);this.arcTo(x+w,y,x+w,y+h,r);this.arcTo(x+w,y+h,x,y+h,r);this.arcTo(x,y+h,x,y,r);this.arcTo(x,y,x+w,y,r);this.closePath()};
 load();setInterval(load,60000);requestAnimationFrame(frame);
