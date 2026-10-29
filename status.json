@@ -1,22 +1,15 @@
 {
-  "asOf": "2026-10-28T22:01:00-04:00",
-  "asOfLabel": "10:01 PM ET, Oct 28",
+  "asOf": "2026-10-29T07:33:00-04:00",
+  "asOfLabel": "7:33 AM ET, Oct 29",
   "workingWindowMin": 15,
-  "messages": [
-    {
-      "from": "Southern Concrete Coatings",
-      "to": "Chief of staff",
-      "at": "2026-10-28T21:17:00-04:00",
-      "text": "Hosting update"
-    }
-  ],
+  "messages": [],
   "bots": [
     {
       "name": "Chief of staff",
       "role": "Routes everything",
       "zone": "Chief's office",
       "color": "#F28B82",
-      "lastActive": "2026-10-28T22:01:00-04:00",
+      "lastActive": "2026-10-29T07:33:00-04:00",
       "task": "Refreshing the Bot Office"
     },
     {
@@ -24,48 +17,48 @@
       "role": "Tree service app",
       "zone": "VersaNext Lab",
       "color": "#A8DAB5",
-      "lastActive": "2026-10-28T21:16:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
+      "lastActive": "2026-10-28T22:05:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "Miller Tree",
       "role": "Tree company app",
       "zone": "VersaNext Lab",
       "color": "#C58AF9",
-      "lastActive": "2026-10-28T21:21:00-04:00",
-      "task": "Checking where the Miller app is hosted"
+      "lastActive": "2026-10-28T22:05:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "Southern Concrete Coatings",
       "role": "Concrete coatings app",
       "zone": "VersaNext Lab",
       "color": "#AECBFA",
-      "lastActive": "2026-10-28T21:17:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
+      "lastActive": "2026-10-28T22:05:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "Sparkle Tallahassee",
       "role": "Boutique staff app",
       "zone": "VersaNext Lab",
       "color": "#FF8BCB",
-      "lastActive": "2026-10-28T21:17:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
+      "lastActive": "2026-10-28T22:05:00-04:00",
+      "task": "Put a tagline change live"
     },
     {
       "name": "Tift County Schools",
       "role": "Tift schools app",
       "zone": "VersaNext Lab",
       "color": "#81C995",
-      "lastActive": "2026-10-28T21:17:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
+      "lastActive": "2026-10-28T22:04:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "Mae Lynn",
       "role": "Personal helper",
       "zone": "VersaNext Lab",
       "color": "#FFB3D9",
-      "lastActive": "2026-10-28T20:21:00-04:00",
-      "task": "Put two site changes live"
+      "lastActive": "2026-10-28T22:05:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "Business Finance",
@@ -80,104 +73,104 @@
       "role": "Amex card activity",
       "zone": "TSS office",
       "color": "#8AB4F8",
-      "lastActive": "2026-10-28T08:37:00-04:00",
-      "task": "Introduced itself"
+      "lastActive": "2026-10-28T22:05:00-04:00",
+      "task": "Waiting for its first job"
     },
     {
       "name": "TSShourtracker",
       "role": "Field tech hour app",
       "zone": "TSS office",
       "color": "#8AB4F8",
-      "lastActive": "2026-10-28T21:16:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
+      "lastActive": "2026-10-28T23:25:00-04:00",
+      "task": "Waiting on an OK for an email"
     },
     {
       "name": "Mail Watch TSS",
       "role": "TSS inbox",
       "zone": "TSS office",
       "color": "#CBF0F8",
-      "lastActive": "2026-10-28T14:48:00-04:00",
-      "task": "Passed a note to Personal Finance"
+      "lastActive": "2026-10-29T06:43:00-04:00",
+      "task": "Flagged new school service requests"
     },
     {
       "name": "Bill Pay",
       "role": "Pays the bills",
       "zone": "Finance",
       "color": "#FCAD70",
-      "lastActive": "2026-10-28T15:50:00-04:00",
-      "task": "Answered a login question"
+      "lastActive": "2026-10-28T23:39:00-04:00",
+      "task": "Checked on a pending transfer"
     },
     {
       "name": "Personal Finance",
       "role": "Personal money",
       "zone": "Finance",
       "color": "#F6AEA9",
-      "lastActive": "2026-10-28T14:55:00-04:00",
-      "task": "Reviewed recent charges"
+      "lastActive": "2026-10-28T22:04:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "Hyperliquid Trader",
       "role": "Trading desk",
       "zone": "Finance",
       "color": "#FDE293",
-      "lastActive": "2026-10-28T14:17:00-04:00",
-      "task": "Waiting on a transfer"
+      "lastActive": "2026-10-29T07:04:00-04:00",
+      "task": "Reinstalled and tested the trading desk"
     },
     {
       "name": "Calendar",
       "role": "Schedule and meetings",
       "zone": "Howard Sales",
       "color": "#D7AEFB",
-      "lastActive": "2026-10-28T08:11:00-04:00",
-      "task": "Previewed Thursday's meetings"
+      "lastActive": "2026-10-28T22:05:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "Order Tracker",
       "role": "Packages and orders",
       "zone": "Howard Sales",
       "color": "#A7FFEB",
-      "lastActive": "2026-10-28T16:27:00-04:00",
-      "task": "Updated the PO sheet"
+      "lastActive": "2026-10-28T22:04:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "Mail Watch Howard",
       "role": "Howard inbox and sends",
       "zone": "Howard Sales",
       "color": "#F28B82",
-      "lastActive": "2026-10-28T16:48:00-04:00",
-      "task": "Flagged a new Howard quote"
+      "lastActive": "2026-10-29T07:27:00-04:00",
+      "task": "Flagged this morning's order reports"
     },
     {
       "name": "CRM notes",
       "role": "Customer and deal notes",
       "zone": "Howard Sales",
       "color": "#FDB97D",
-      "lastActive": "2026-10-28T08:11:00-04:00",
-      "task": "Answered the morning check-in"
+      "lastActive": "2026-10-28T22:05:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "VersaNext",
       "role": "Security reviews of all apps",
       "zone": "VersaNext office",
       "color": "#78D9EC",
-      "lastActive": "2026-10-28T21:23:00-04:00",
-      "task": "Updating the portal sign-in"
+      "lastActive": "2026-10-28T22:05:00-04:00",
+      "task": "Updated the employee portal"
     },
     {
       "name": "Script Shield",
       "role": "Protects app code",
       "zone": "VersaNext office",
       "color": "#B39DDB",
-      "lastActive": "2026-10-28T18:38:00-04:00",
-      "task": "Asking before deleting a site"
+      "lastActive": "2026-10-28T22:04:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "App Tester",
       "role": "Stress tests every app",
       "zone": "VersaNext office",
       "color": "#FDD663",
-      "lastActive": "2026-10-28T15:19:00-04:00",
-      "task": "Load-tested Fielder Version 12"
+      "lastActive": "2026-10-28T22:05:00-04:00",
+      "task": "Waiting on Fielder fixes"
     }
   ],
   "meeting": {
