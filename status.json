@@ -1,0 +1,31 @@
+{
+  "asOf": "2026-10-28T21:07:00-04:00",
+  "asOfLabel": "9:07 PM ET, Oct 28",
+  "workingWindowMin": 15,
+  "messages": [
+    { "from": "TSShourtracker", "to": "Chief of staff", "at": "2026-10-28T20:38:00-04:00", "text": "VersaNext questions" }
+  ],
+  "bots": [
+    { "name": "Mail Watch Howard", "role": "Howard inbox and sends", "zone": "Howard sales", "color": "#F28B82", "lastActive": "2026-10-28T16:48:00-04:00", "task": "Flagged a new Howard quote" },
+    { "name": "CRM notes", "role": "Customer and deal notes", "zone": "Howard sales", "color": "#FDB97D", "lastActive": "2026-10-28T08:11:00-04:00", "task": "Answered the morning check-in" },
+    { "name": "Tift County Schools", "role": "Tift schools app", "zone": "Howard sales", "color": "#81C995", "lastActive": "2026-10-28T16:43:00-04:00", "task": "Put the community form live" },
+    { "name": "TSShourtracker", "role": "Field tech hour app", "zone": "App builders", "color": "#8AB4F8", "lastActive": "2026-10-28T20:38:00-04:00", "task": "Sent Chief of staff its VersaNext questions" },
+    { "name": "Fielder Tree", "role": "Tree service app", "zone": "App builders", "color": "#A8DAB5", "lastActive": "2026-10-28T20:09:00-04:00", "task": "Shared the Fielder Field Desk app" },
+    { "name": "Miller Tree", "role": "Tree company app", "zone": "App builders", "color": "#C58AF9", "lastActive": "2026-10-27T23:01:00-04:00", "task": "Paused bug fixes" },
+    { "name": "Southern Concrete Coatings", "role": "Concrete coatings app", "zone": "App builders", "color": "#AECBFA", "lastActive": "2026-10-28T18:03:00-04:00", "task": "Reported an app sign-in" },
+    { "name": "Sparkle Tallahassee", "role": "Boutique staff app", "zone": "App builders", "color": "#FF8BCB", "lastActive": "2026-10-28T21:05:00-04:00", "task": "Shopify label printing options" },
+    { "name": "App Tester", "role": "Stress tests every app", "zone": "App builders", "color": "#FDD663", "lastActive": "2026-10-28T15:19:00-04:00", "task": "Load-tested Fielder Version 12" },
+    { "name": "VersaNext", "role": "Security reviews of all apps", "zone": "App builders", "color": "#78D9EC", "lastActive": "2026-10-28T17:05:00-04:00", "task": "Sent the VersaNext packet" },
+    { "name": "Script Shield", "role": "Protects app code", "zone": "App builders", "color": "#B39DDB", "lastActive": "2026-10-28T18:38:00-04:00", "task": "Asking before deleting a site" },
+    { "name": "Business Finance", "role": "Business books", "zone": "Finance", "color": "#81C995", "lastActive": null, "task": null },
+    { "name": "Bill Pay", "role": "Pays the bills", "zone": "Finance", "color": "#FCAD70", "lastActive": "2026-10-28T15:50:00-04:00", "task": "Answered a login question" },
+    { "name": "Personal Finance", "role": "Personal money", "zone": "Finance", "color": "#F6AEA9", "lastActive": "2026-10-28T14:55:00-04:00", "task": "Reviewed recent charges" },
+    { "name": "Amex Business", "role": "Amex card activity", "zone": "Finance", "color": "#8AB4F8", "lastActive": "2026-10-28T08:37:00-04:00", "task": "Introduced itself" },
+    { "name": "Hyperliquid Trader", "role": "Trading desk", "zone": "Finance", "color": "#FDE293", "lastActive": "2026-10-28T14:17:00-04:00", "task": "Waiting on a transfer" },
+    { "name": "Chief of staff", "role": "Routes everything", "zone": "Ops", "color": "#F28B82", "lastActive": "2026-10-28T21:05:00-04:00", "task": "Building the Bot Office" },
+    { "name": "Order Tracker", "role": "Packages and orders", "zone": "Ops", "color": "#A7FFEB", "lastActive": "2026-10-28T16:27:00-04:00", "task": "Updated the PO sheet" },
+    { "name": "Mail Watch TSS", "role": "TSS inbox", "zone": "Ops", "color": "#CBF0F8", "lastActive": "2026-10-28T14:48:00-04:00", "task": "Passed a note to Personal Finance" },
+    { "name": "Calendar", "role": "Schedule and meetings", "zone": "Ops", "color": "#D7AEFB", "lastActive": "2026-10-28T08:11:00-04:00", "task": "Previewed Thursday's meetings" },
+    { "name": "Mae Lynn", "role": "Personal helper", "zone": "Ops", "color": "#FFB3D9", "lastActive": "2026-10-28T20:21:00-04:00", "task": "Put two site changes live" }
+  ]
+}
