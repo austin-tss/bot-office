@@ -41,18 +41,17 @@ const cv=document.getElementById('c'),g=cv.getContext('2d'),W=1200,H=860;
 const CORR=455;
 const ZONES={
  "Chief's office":{x:30,y:90,w:220,h:330,fl:"#fbeedd",cols:1,boss:1},
- "Howard Sales":{x:265,y:90,w:290,h:330,fl:"#fdeeee",cols:2},
- "VersaNext apps":{x:570,y:90,w:400,h:330,fl:"#eaf2fd",cols:3},
- "TSS office":{x:985,y:90,w:185,h:330,fl:"#eef0fb",cols:1},
+ "VersaNext Lab":{x:265,y:90,w:490,h:330,fl:"#eaf2fd",cols:3},
+ "TSS office":{x:770,y:90,w:400,h:330,fl:"#eef0fb",cols:2},
  "Finance":{x:30,y:495,w:250,h:340,fl:"#eaf7ee",cols:2},
- "Ops":{x:295,y:495,w:250,h:340,fl:"#fdf6e3",cols:2},
+ "Howard Sales":{x:295,y:495,w:250,h:340,fl:"#fdeeee",cols:2},
  "VersaNext office":{x:865,y:495,w:305,h:340,fl:"#e8f8fb",cols:2}};
 const MEET={x:560,y:495,w:145,h:340},COFFEE={x:720,y:495,w:130,h:340};
 const COFFEE_SPOTS=[[750,665],[800,685],[775,725],[820,640]];
 let data=null,bots=[],sel=null,t0=performance.now();
 function etHour(){const s=new Date().toLocaleString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'numeric',hour12:false});const [h,m]=s.split(':').map(Number);return (h%24)+m/60}
 function ago(ms){if(ms==null)return'unknown';const m=Math.round(ms/60000);if(m<60)return m+'m ago';const h=Math.floor(m/60);if(h<48)return h+'h '+(m%60)+'m ago';return Math.floor(h/24)+'d ago'}
-function layout(list){const cnt={};return list.map(b=>{const z=ZONES[b.zone]||ZONES.Ops;const i=cnt[b.zone]=(cnt[b.zone]||0);cnt[b.zone]++;
+function layout(list){const cnt={};return list.map(b=>{const z=ZONES[b.zone]||ZONES["VersaNext Lab"];const i=cnt[b.zone]=(cnt[b.zone]||0);cnt[b.zone]++;
  const sx=(z.w-40)/z.cols;const dx=z.x+20+sx*(i%z.cols)+sx/2,dy=z.y+(z.boss?120:70)+Math.floor(i/z.cols)*150;return{dx,dy,seat:[dx,dy+38]}})}
 async function load(){try{const r=await fetch('status.json?t='+Date.now(),{cache:'no-store'});const d=await r.json();apply(d)}catch(e){document.getElementById('asof').textContent='Could not load status.json'}}
 function apply(d){const asOf=Date.parse(d.asOf);const win=(d.workingWindowMin||15)*60000;const L=layout(d.bots);
@@ -114,7 +113,7 @@ function drawRoom(){const h=etHour(),[s1,s2]=sky(h);
  g.fillStyle='#a8743f';g.beginPath();g.arc(COFFEE.x+65,COFFEE.y+190,30,0,7);g.fill();plant(COFFEE.x+30,COFFEE.y+305,1.1);plant(COFFEE.x+105,COFFEE.y+305,1.1);
  // corridor rug
  rr(30,CORR-28,1140,56,28,'#e6d6bd');g.setLineDash([10,10]);g.strokeStyle='#d6c3a5';g.lineWidth=2;g.beginPath();g.moveTo(60,CORR);g.lineTo(1140,CORR);g.stroke();g.setLineDash([]);
- [[235,105],[540,105],[1155,815],[45,815]].forEach(([x,y])=>plant(x,y,0.8))}
+ [[235,105],[740,105],[1155,815],[45,815]].forEach(([x,y])=>plant(x,y,0.8))}
 function drawPortal(){const z=ZONES['VersaNext office'];const x=z.x+172,y=z.y+8;rr(x,y,126,24,6,'#1f6f8b','#155366');g.fillStyle='#fff';g.font='600 11px system-ui';g.fillText('🚪 Employee Portal ↗',x+8,y+16)}
 const PORTAL='https://austin-tss.github.io/versanext-portal/';
 function drawDesk(b,t){const x=b.dx,y=b.dy,w=b.st=='working';

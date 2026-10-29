@@ -26,6 +26,110 @@
       "task": "Refreshing the Bot Office"
     },
     {
+      "name": "Fielder Tree",
+      "role": "Tree service app",
+      "zone": "VersaNext Lab",
+      "color": "#A8DAB5",
+      "lastActive": "2026-10-28T21:16:00-04:00",
+      "task": "Confirmed its hosting on GitHub Pages"
+    },
+    {
+      "name": "Miller Tree",
+      "role": "Tree company app",
+      "zone": "VersaNext Lab",
+      "color": "#C58AF9",
+      "lastActive": "2026-10-28T21:21:00-04:00",
+      "task": "Checking where the Miller app is hosted"
+    },
+    {
+      "name": "Southern Concrete Coatings",
+      "role": "Concrete coatings app",
+      "zone": "VersaNext Lab",
+      "color": "#AECBFA",
+      "lastActive": "2026-10-28T21:17:00-04:00",
+      "task": "Confirmed its hosting on GitHub Pages"
+    },
+    {
+      "name": "Sparkle Tallahassee",
+      "role": "Boutique staff app",
+      "zone": "VersaNext Lab",
+      "color": "#FF8BCB",
+      "lastActive": "2026-10-28T21:17:00-04:00",
+      "task": "Confirmed its hosting on GitHub Pages"
+    },
+    {
+      "name": "Tift County Schools",
+      "role": "Tift schools app",
+      "zone": "VersaNext Lab",
+      "color": "#81C995",
+      "lastActive": "2026-10-28T21:17:00-04:00",
+      "task": "Confirmed its hosting on GitHub Pages"
+    },
+    {
+      "name": "Mae Lynn",
+      "role": "Personal helper",
+      "zone": "VersaNext Lab",
+      "color": "#FFB3D9",
+      "lastActive": "2026-10-28T20:21:00-04:00",
+      "task": "Put two site changes live"
+    },
+    {
+      "name": "Business Finance",
+      "role": "Business books",
+      "zone": "TSS office",
+      "color": "#81C995",
+      "lastActive": null,
+      "task": null
+    },
+    {
+      "name": "Amex Business",
+      "role": "Amex card activity",
+      "zone": "TSS office",
+      "color": "#8AB4F8",
+      "lastActive": "2026-10-28T08:37:00-04:00",
+      "task": "Introduced itself"
+    },
+    {
+      "name": "TSShourtracker",
+      "role": "Field tech hour app",
+      "zone": "TSS office",
+      "color": "#8AB4F8",
+      "lastActive": "2026-10-28T21:16:00-04:00",
+      "task": "Confirmed its hosting on GitHub Pages"
+    },
+    {
+      "name": "Mail Watch TSS",
+      "role": "TSS inbox",
+      "zone": "TSS office",
+      "color": "#CBF0F8",
+      "lastActive": "2026-10-28T14:48:00-04:00",
+      "task": "Passed a note to Personal Finance"
+    },
+    {
+      "name": "Bill Pay",
+      "role": "Pays the bills",
+      "zone": "Finance",
+      "color": "#FCAD70",
+      "lastActive": "2026-10-28T15:50:00-04:00",
+      "task": "Answered a login question"
+    },
+    {
+      "name": "Personal Finance",
+      "role": "Personal money",
+      "zone": "Finance",
+      "color": "#F6AEA9",
+      "lastActive": "2026-10-28T14:55:00-04:00",
+      "task": "Reviewed recent charges"
+    },
+    {
+      "name": "Hyperliquid Trader",
+      "role": "Trading desk",
+      "zone": "Finance",
+      "color": "#FDE293",
+      "lastActive": "2026-10-28T14:17:00-04:00",
+      "task": "Waiting on a transfer"
+    },
+    {
       "name": "Calendar",
       "role": "Schedule and meetings",
       "zone": "Howard Sales",
@@ -58,116 +162,12 @@
       "task": "Answered the morning check-in"
     },
     {
-      "name": "Fielder Tree",
-      "role": "Tree service app",
-      "zone": "VersaNext apps",
-      "color": "#A8DAB5",
-      "lastActive": "2026-10-28T21:16:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
-    },
-    {
-      "name": "Miller Tree",
-      "role": "Tree company app",
-      "zone": "VersaNext apps",
-      "color": "#C58AF9",
-      "lastActive": "2026-10-28T21:21:00-04:00",
-      "task": "Checking where the Miller app is hosted"
-    },
-    {
-      "name": "Southern Concrete Coatings",
-      "role": "Concrete coatings app",
-      "zone": "VersaNext apps",
-      "color": "#AECBFA",
-      "lastActive": "2026-10-28T21:17:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
-    },
-    {
-      "name": "Sparkle Tallahassee",
-      "role": "Boutique staff app",
-      "zone": "VersaNext apps",
-      "color": "#FF8BCB",
-      "lastActive": "2026-10-28T21:17:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
-    },
-    {
-      "name": "Tift County Schools",
-      "role": "Tift schools app",
-      "zone": "VersaNext apps",
-      "color": "#81C995",
-      "lastActive": "2026-10-28T21:17:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
-    },
-    {
-      "name": "Mae Lynn",
-      "role": "Personal helper",
-      "zone": "VersaNext apps",
-      "color": "#FFB3D9",
-      "lastActive": "2026-10-28T20:21:00-04:00",
-      "task": "Put two site changes live"
-    },
-    {
-      "name": "Business Finance",
-      "role": "Business books",
-      "zone": "TSS office",
-      "color": "#81C995",
-      "lastActive": null,
-      "task": null
-    },
-    {
-      "name": "Amex Business",
-      "role": "Amex card activity",
-      "zone": "TSS office",
-      "color": "#8AB4F8",
-      "lastActive": "2026-10-28T08:37:00-04:00",
-      "task": "Introduced itself"
-    },
-    {
-      "name": "Bill Pay",
-      "role": "Pays the bills",
-      "zone": "Finance",
-      "color": "#FCAD70",
-      "lastActive": "2026-10-28T15:50:00-04:00",
-      "task": "Answered a login question"
-    },
-    {
-      "name": "Personal Finance",
-      "role": "Personal money",
-      "zone": "Finance",
-      "color": "#F6AEA9",
-      "lastActive": "2026-10-28T14:55:00-04:00",
-      "task": "Reviewed recent charges"
-    },
-    {
-      "name": "Hyperliquid Trader",
-      "role": "Trading desk",
-      "zone": "Finance",
-      "color": "#FDE293",
-      "lastActive": "2026-10-28T14:17:00-04:00",
-      "task": "Waiting on a transfer"
-    },
-    {
-      "name": "Mail Watch TSS",
-      "role": "TSS inbox",
-      "zone": "Ops",
-      "color": "#CBF0F8",
-      "lastActive": "2026-10-28T14:48:00-04:00",
-      "task": "Passed a note to Personal Finance"
-    },
-    {
       "name": "VersaNext",
       "role": "Security reviews of all apps",
       "zone": "VersaNext office",
       "color": "#78D9EC",
       "lastActive": "2026-10-28T21:23:00-04:00",
       "task": "Updating the portal sign-in"
-    },
-    {
-      "name": "TSShourtracker",
-      "role": "Field tech hour app",
-      "zone": "VersaNext office",
-      "color": "#8AB4F8",
-      "lastActive": "2026-10-28T21:16:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
     },
     {
       "name": "Script Shield",
