@@ -183,9 +183,9 @@
     }
   ],
   "meeting": {
-    "active": false,
+    "active": true,
     "title": "All-hands with Austin",
-    "since": "2026-10-28T22:04:00-04:00",
+    "since": "2026-10-29T14:40:00-04:00",
     "attendees": [
       "Chief of staff",
       "Fielder Tree",
@@ -197,6 +197,7 @@
       "VersaNext",
       "Script Shield",
       "App Tester",
+      "Business Finance",
       "Amex Business",
       "TSShourtracker",
       "Mail Watch TSS",
