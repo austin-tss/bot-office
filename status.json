@@ -179,5 +179,32 @@
       "lastActive": "2026-10-28T15:19:00-04:00",
       "task": "Load-tested Fielder Version 12"
     }
-  ]
+  ],
+  "meeting": {
+    "active": true,
+    "title": "All-hands with Austin",
+    "since": "2026-10-28T22:04:00-04:00",
+    "attendees": [
+      "Chief of staff",
+      "Fielder Tree",
+      "Miller Tree",
+      "Southern Concrete Coatings",
+      "Sparkle Tallahassee",
+      "Tift County Schools",
+      "Mae Lynn",
+      "Amex Business",
+      "TSShourtracker",
+      "Mail Watch TSS",
+      "Bill Pay",
+      "Personal Finance",
+      "Hyperliquid Trader",
+      "Calendar",
+      "Order Tracker",
+      "Mail Watch Howard",
+      "CRM notes",
+      "VersaNext",
+      "Script Shield",
+      "App Tester"
+    ]
+  }
 }
