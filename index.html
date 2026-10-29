@@ -26,7 +26,7 @@ footer{color:var(--sub);font-size:12px;margin-top:14px}
 <header><h1>Bot Office</h1><span id="asof">Loading status…</span><span id="stale"></span></header>
 <div id="banner" style="display:none;max-width:1208px;margin:0 auto 10px;background:#fff4d6;border:1px solid #f0d58a;border-radius:10px;padding:8px 14px;font-weight:600"></div>
 <main>
-<div id="wrap"><canvas id="c" width="1200" height="860"></canvas><div id="card"></div></div>
+<div id="wrap"><canvas id="c" width="1200" height="980"></canvas><div id="card"></div></div>
 <div id="legend">
 <span><i class="dot" style="background:#34a853"></i>Working: active within 15 min of the as-of time, seated, monitor glowing</span>
 <span><i class="dot" style="background:#bdb3a6"></i>Idle: wandering or on a coffee run</span>
@@ -38,26 +38,26 @@ footer{color:var(--sub);font-size:12px;margin-top:14px}
 <footer>Status comes from status.json in this repo and is re-checked every 60 seconds. The sky follows the current time in ET.</footer>
 </main>
 <script>
-const cv=document.getElementById('c'),g=cv.getContext('2d'),W=1200,H=860;
+const cv=document.getElementById('c'),g=cv.getContext('2d'),W=1200,H=980;
 const CORR=455;
 const ZONES={
  "Chief's office":{x:30,y:90,w:220,h:330,fl:"#fbeedd",cols:1,boss:1},
  "VersaNext Lab":{x:265,y:90,w:490,h:330,fl:"#eaf2fd",cols:3},
  "VersaNext office":{x:770,y:90,w:400,h:330,fl:"#e8f8fb",cols:2},
- "Finance":{x:30,y:495,w:250,h:340,fl:"#eaf7ee",cols:2},
- "Howard Sales":{x:295,y:495,w:250,h:340,fl:"#fdeeee",cols:2},
- "TSS office":{x:865,y:495,w:305,h:340,fl:"#eef0fb",cols:2}};
-const MEET={x:560,y:495,w:145,h:340},COFFEE={x:720,y:495,w:130,h:340};
+ "Finance":{x:30,y:495,w:250,h:460,fl:"#eaf7ee",cols:2},
+ "Howard Sales":{x:295,y:495,w:250,h:460,fl:"#fdeeee",cols:2},
+ "TSS office":{x:865,y:495,w:305,h:460,fl:"#eef0fb",cols:2}};
+const MEET={x:560,y:495,w:145,h:460},COFFEE={x:720,y:495,w:130,h:460};
 const COFFEE_SPOTS=[[750,665],[800,685],[775,725],[820,640]];
 let data=null,bots=[],sel=null,t0=performance.now();
 function etHour(){const s=new Date().toLocaleString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'numeric',hour12:false});const [h,m]=s.split(':').map(Number);return (h%24)+m/60}
-function ago(ms){if(ms==null)return'unknown';const m=Math.round(ms/60000);if(m<60)return m+'m ago';const h=Math.floor(m/60);if(h<48)return h+'h '+(m%60)+'m ago';return Math.floor(h/24)+'d ago'}
+function ago(ms){if(ms==null)return'unknown';const m=Math.max(0,Math.round(ms/60000));if(m<60)return m+'m ago';const h=Math.floor(m/60);if(h<48)return h+'h '+(m%60)+'m ago';return Math.floor(h/24)+'d ago'}
 function layout(list){const cnt={};return list.map(b=>{const z=ZONES[b.zone]||ZONES["VersaNext Lab"];const i=cnt[b.zone]=(cnt[b.zone]||0);cnt[b.zone]++;
- const sx=(z.w-40)/z.cols;const dx=z.x+20+sx*(i%z.cols)+sx/2,dy=z.y+(z.boss?120:70)+Math.floor(i/z.cols)*150;return{dx,dy,seat:[dx,dy+38]}})}
+ const sx=(z.w-40)/z.cols;const dx=z.x+20+sx*(i%z.cols)+sx/2,dy=z.y+(z.top||(z.boss?120:70))+Math.floor(i/z.cols)*(z.gap||150);return{dx,dy,seat:[dx,dy+38]}})}
 async function load(){try{const r=await fetch('status.json?t='+Date.now(),{cache:'no-store'});const d=await r.json();apply(d)}catch(e){document.getElementById('asof').textContent='Could not load status.json'}}
 function apply(d){const asOf=Date.parse(d.asOf);const win=(d.workingWindowMin||15)*60000;const L=layout(d.bots);
  const old={};bots.forEach(b=>old[b.name]=b);
- bots=d.bots.map((b,i)=>{const la=b.lastActive?Date.parse(b.lastActive):null;const st=la==null?'unknown':(asOf-la<=win?'working':'idle');
+ bots=d.bots.map((b,i)=>{const la=b.lastActive?Date.parse(b.lastActive):null;const st=b.status||(la==null?'unknown':(asOf-la<=win?'working':'idle'));
   const o=old[b.name];const nb=Object.assign({},b,L[i],{st,la,agoMs:la==null?null:asOf-la});
   nb.x=o?o.x:L[i].seat[0];nb.y=o?o.y:L[i].seat[1];nb.path=[];nb.wait=Math.random()*3;nb.mode='home';nb.bubble=null;return nb});
  data=d;const M=d.meeting&&d.meeting.active?d.meeting:null;data.seat={};if(M){const at=(M.attendees||[]).filter(n=>bots.some(b=>b.name==n));at.forEach((n,i)=>{const a=-Math.PI/2+2*Math.PI*i/at.length;data.seat[n]=[MTG.cx+Math.cos(a)*MTG.rx,MTG.cy+Math.sin(a)*MTG.ry]})}
@@ -113,13 +113,13 @@ function drawRoom(){const h=etHour(),[s1,s2]=sky(h);
  rr(COFFEE.x,COFFEE.y,COFFEE.w,COFFEE.h,14,'#fbf0e4','#e2c9ac');g.fillStyle='#5a4e42';g.fillText('Coffee bar',COFFEE.x+14,COFFEE.y+24);
  rr(COFFEE.x+14,COFFEE.y+40,102,34,6,'#8a6a4f');rr(COFFEE.x+24,COFFEE.y+44,26,24,4,'#3d3d3d');g.fillStyle='#e44';g.fillRect(COFFEE.x+30,COFFEE.y+50,4,4);
  rr(COFFEE.x+60,COFFEE.y+46,18,20,3,'#f2f2f2','#aaa');rr(COFFEE.x+84,COFFEE.y+48,26,16,8,'#f5c26b');
- g.fillStyle='#a8743f';g.beginPath();g.arc(COFFEE.x+65,COFFEE.y+190,30,0,7);g.fill();plant(COFFEE.x+30,COFFEE.y+305,1.1);plant(COFFEE.x+105,COFFEE.y+305,1.1);
+ g.fillStyle='#a8743f';g.beginPath();g.arc(COFFEE.x+65,COFFEE.y+190,30,0,7);g.fill();plant(COFFEE.x+30,COFFEE.y+425,1.1);plant(COFFEE.x+105,COFFEE.y+425,1.1);
  // corridor rug
  rr(30,CORR-28,1140,56,28,'#e6d6bd');g.setLineDash([10,10]);g.strokeStyle='#d6c3a5';g.lineWidth=2;g.beginPath();g.moveTo(60,CORR);g.lineTo(1140,CORR);g.stroke();g.setLineDash([]);
- [[235,105],[740,105],[1155,815],[45,815]].forEach(([x,y])=>plant(x,y,0.8))}
+ [[235,105],[740,105],[1155,935],[45,935]].forEach(([x,y])=>plant(x,y,0.8))}
 function drawDoor(){const a=ZONES['VersaNext Lab'],b=ZONES['VersaNext office'];const x=a.x+a.w-4,y=a.y+150;rr(x,y,b.x-x+4,60,4,'#c9a27a','#9c7a55');g.fillStyle='#e8f8fb';g.fillRect(x+4,y+4,b.x-x-4,52)}
 function drawPortal(){const z=ZONES['VersaNext office'];const x=z.x+172,y=z.y+8;rr(x,y,126,24,6,'#1f6f8b','#155366');g.fillStyle='#fff';g.font='600 11px system-ui';g.fillText('🚪 Employee Portal ↗',x+8,y+16)}
-const MTG={x:290,y:490,w:565,h:350,cx:572,cy:668,rx:225,ry:118};
+const MTG={x:290,y:490,w:565,h:470,cx:572,cy:725,rx:225,ry:160};
 function drawMeeting(){if(!data||!data.meeting||!data.meeting.active)return;rr(MTG.x,MTG.y,MTG.w,MTG.h,16,'#f3eefb','#b9a6dc');g.fillStyle='#5a4e42';g.font='600 16px system-ui';g.fillText('All-hands meeting room',MTG.x+14,MTG.y+24);
  g.fillStyle='#b98d63';g.beginPath();g.ellipse(MTG.cx,MTG.cy,155,72,0,0,7);g.fill();g.strokeStyle='#946c47';g.lineWidth=3;g.stroke();g.fillStyle='#fff';g.font='600 13px system-ui';g.textAlign='center';g.fillText(data.meeting.title||'All-hands',MTG.cx,MTG.cy+5);g.textAlign='left'}
 function drawMeetLabels(){if(!data||!data.seat)return;g.font='600 9px system-ui';g.textAlign='center';bots.forEach(b=>{const s=data.seat[b.name];if(!s||Math.hypot(b.x-s[0],b.y-s[1])>3)return;const n=b.name.length>14?b.name.slice(0,13)+'…':b.name;const w=g.measureText(n).width+6;rr(b.x-w/2,b.y+17,w,12,3,'#ffffffdd');g.fillStyle='#3a322a';g.fillText(n,b.x,b.y+26)});g.textAlign='left'}

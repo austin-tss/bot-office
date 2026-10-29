@@ -93,6 +93,15 @@
       "task": "Flagged new school service requests"
     },
     {
+      "name": "TSS Receivables",
+      "role": "TSS receivables",
+      "zone": "TSS office",
+      "color": "#9CCC65",
+      "lastActive": "2026-10-29T13:36:00-04:00",
+      "task": "Building the receivables site",
+      "status": "working"
+    },
+    {
       "name": "Bill Pay",
       "role": "Pays the bills",
       "zone": "Finance",
@@ -191,6 +200,7 @@
       "Amex Business",
       "TSShourtracker",
       "Mail Watch TSS",
+      "TSS Receivables",
       "Bill Pay",
       "Personal Finance",
       "Hyperliquid Trader",
