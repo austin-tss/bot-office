@@ -181,7 +181,7 @@
     }
   ],
   "meeting": {
-    "active": true,
+    "active": false,
     "title": "All-hands with Austin",
     "since": "2026-10-28T22:04:00-04:00",
     "attendees": [
