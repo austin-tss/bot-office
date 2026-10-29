@@ -18,9 +18,25 @@
   ],
   "bots": [
     {
+      "name": "Calendar",
+      "role": "Schedule and meetings",
+      "zone": "Howard Sales",
+      "color": "#D7AEFB",
+      "lastActive": "2026-10-28T08:11:00-04:00",
+      "task": "Previewed Thursday's meetings"
+    },
+    {
+      "name": "Order Tracker",
+      "role": "Packages and orders",
+      "zone": "Howard Sales",
+      "color": "#A7FFEB",
+      "lastActive": "2026-10-28T16:27:00-04:00",
+      "task": "Updated the PO sheet"
+    },
+    {
       "name": "Mail Watch Howard",
       "role": "Howard inbox and sends",
-      "zone": "Howard sales",
+      "zone": "Howard Sales",
       "color": "#F28B82",
       "lastActive": "2026-10-28T16:48:00-04:00",
       "task": "Flagged a new Howard quote"
@@ -28,31 +44,47 @@
     {
       "name": "CRM notes",
       "role": "Customer and deal notes",
-      "zone": "Howard sales",
+      "zone": "Howard Sales",
       "color": "#FDB97D",
       "lastActive": "2026-10-28T08:11:00-04:00",
       "task": "Answered the morning check-in"
     },
     {
-      "name": "Tift County Schools",
-      "role": "Tift schools app",
-      "zone": "Howard sales",
-      "color": "#81C995",
-      "lastActive": "2026-10-28T21:17:00-04:00",
-      "task": "Confirmed its hosting on GitHub Pages"
+      "name": "VersaNext",
+      "role": "Security reviews of all apps",
+      "zone": "VersaNext",
+      "color": "#78D9EC",
+      "lastActive": "2026-10-28T21:23:00-04:00",
+      "task": "Updating the portal sign-in"
     },
     {
       "name": "TSShourtracker",
       "role": "Field tech hour app",
-      "zone": "App builders",
+      "zone": "VersaNext",
       "color": "#8AB4F8",
       "lastActive": "2026-10-28T21:16:00-04:00",
       "task": "Confirmed its hosting on GitHub Pages"
     },
     {
+      "name": "App Tester",
+      "role": "Stress tests every app",
+      "zone": "VersaNext",
+      "color": "#FDD663",
+      "lastActive": "2026-10-28T15:19:00-04:00",
+      "task": "Load-tested Fielder Version 12"
+    },
+    {
+      "name": "Script Shield",
+      "role": "Protects app code",
+      "zone": "VersaNext",
+      "color": "#B39DDB",
+      "lastActive": "2026-10-28T18:38:00-04:00",
+      "task": "Asking before deleting a site"
+    },
+    {
       "name": "Fielder Tree",
       "role": "Tree service app",
-      "zone": "App builders",
+      "zone": "App Builders",
       "color": "#A8DAB5",
       "lastActive": "2026-10-28T21:16:00-04:00",
       "task": "Confirmed its hosting on GitHub Pages"
@@ -60,7 +92,7 @@
     {
       "name": "Miller Tree",
       "role": "Tree company app",
-      "zone": "App builders",
+      "zone": "App Builders",
       "color": "#C58AF9",
       "lastActive": "2026-10-28T21:21:00-04:00",
       "task": "Checking where the Miller app is hosted"
@@ -68,7 +100,7 @@
     {
       "name": "Southern Concrete Coatings",
       "role": "Concrete coatings app",
-      "zone": "App builders",
+      "zone": "App Builders",
       "color": "#AECBFA",
       "lastActive": "2026-10-28T21:17:00-04:00",
       "task": "Confirmed its hosting on GitHub Pages"
@@ -76,34 +108,18 @@
     {
       "name": "Sparkle Tallahassee",
       "role": "Boutique staff app",
-      "zone": "App builders",
+      "zone": "App Builders",
       "color": "#FF8BCB",
       "lastActive": "2026-10-28T21:17:00-04:00",
       "task": "Confirmed its hosting on GitHub Pages"
     },
     {
-      "name": "App Tester",
-      "role": "Stress tests every app",
-      "zone": "App builders",
-      "color": "#FDD663",
-      "lastActive": "2026-10-28T15:19:00-04:00",
-      "task": "Load-tested Fielder Version 12"
-    },
-    {
-      "name": "VersaNext",
-      "role": "Security reviews of all apps",
-      "zone": "App builders",
-      "color": "#78D9EC",
-      "lastActive": "2026-10-28T21:23:00-04:00",
-      "task": "Updating the portal sign-in"
-    },
-    {
-      "name": "Script Shield",
-      "role": "Protects app code",
-      "zone": "App builders",
-      "color": "#B39DDB",
-      "lastActive": "2026-10-28T18:38:00-04:00",
-      "task": "Asking before deleting a site"
+      "name": "Tift County Schools",
+      "role": "Tift schools app",
+      "zone": "App Builders",
+      "color": "#81C995",
+      "lastActive": "2026-10-28T21:17:00-04:00",
+      "task": "Confirmed its hosting on GitHub Pages"
     },
     {
       "name": "Business Finance",
@@ -154,28 +170,12 @@
       "task": "Refreshing the Bot Office"
     },
     {
-      "name": "Order Tracker",
-      "role": "Packages and orders",
-      "zone": "Ops",
-      "color": "#A7FFEB",
-      "lastActive": "2026-10-28T16:27:00-04:00",
-      "task": "Updated the PO sheet"
-    },
-    {
       "name": "Mail Watch TSS",
       "role": "TSS inbox",
       "zone": "Ops",
       "color": "#CBF0F8",
       "lastActive": "2026-10-28T14:48:00-04:00",
       "task": "Passed a note to Personal Finance"
-    },
-    {
-      "name": "Calendar",
-      "role": "Schedule and meetings",
-      "zone": "Ops",
-      "color": "#D7AEFB",
-      "lastActive": "2026-10-28T08:11:00-04:00",
-      "task": "Previewed Thursday's meetings"
     },
     {
       "name": "Mae Lynn",
