@@ -189,6 +189,15 @@
       "color": "#FDD663",
       "lastActive": "2026-10-28T22:05:00-04:00",
       "task": "Waiting on Fielder fixes"
+    },
+    {
+      "name": "VersaNext CRM",
+      "role": "VersaNext sales CRM",
+      "zone": "VersaNext office",
+      "color": "#80CBC4",
+      "lastActive": "2026-10-30T19:56:00-04:00",
+      "task": "Building the VersaNext CRM",
+      "status": "working"
     }
   ],
   "meeting": {
@@ -206,6 +215,7 @@
       "VersaNext",
       "Script Shield",
       "App Tester",
+      "VersaNext CRM",
       "Business Finance",
       "Amex Business",
       "TSShourtracker",
