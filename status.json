@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-29T07:33:00-04:00",
-  "asOfLabel": "7:33 AM ET, Oct 29",
+  "asOf": "2026-10-30T19:59:00-04:00",
+  "asOfLabel": "7:59 PM ET, Oct 30",
   "workingWindowMin": 15,
   "messages": [],
   "bots": [
@@ -9,55 +9,55 @@
       "role": "Routes everything",
       "zone": "Chief's office",
       "color": "#F28B82",
-      "lastActive": "2026-10-29T07:33:00-04:00",
-      "task": "Refreshing the Bot Office"
+      "lastActive": "2026-10-30T19:59:00-04:00",
+      "task": "Redesigning the Bot Office"
     },
     {
       "name": "Fielder Tree",
       "role": "Tree service app",
       "zone": "VersaNext Lab",
       "color": "#A8DAB5",
-      "lastActive": "2026-10-28T22:05:00-04:00",
-      "task": "Answered the roll call"
+      "lastActive": "2026-10-30T17:56:00-04:00",
+      "task": "Moved Fielder to new hosting"
     },
     {
       "name": "Miller Tree",
       "role": "Tree company app",
       "zone": "VersaNext Lab",
       "color": "#C58AF9",
-      "lastActive": "2026-10-28T22:05:00-04:00",
-      "task": "Answered the roll call"
+      "lastActive": "2026-10-30T17:51:00-04:00",
+      "task": "Building a loading screen"
     },
     {
       "name": "Southern Concrete Coatings",
       "role": "Concrete coatings app",
       "zone": "VersaNext Lab",
       "color": "#AECBFA",
-      "lastActive": "2026-10-28T22:05:00-04:00",
-      "task": "Answered the roll call"
+      "lastActive": "2026-10-30T17:58:00-04:00",
+      "task": "Put a loading screen live"
     },
     {
       "name": "Sparkle Tallahassee",
       "role": "Boutique staff app",
       "zone": "VersaNext Lab",
       "color": "#FF8BCB",
-      "lastActive": "2026-10-28T22:05:00-04:00",
-      "task": "Put a tagline change live"
+      "lastActive": "2026-10-30T17:50:00-04:00",
+      "task": "Put a loading spinner live"
     },
     {
       "name": "Tift County Schools",
       "role": "Tift schools app",
       "zone": "VersaNext Lab",
       "color": "#81C995",
-      "lastActive": "2026-10-28T22:04:00-04:00",
-      "task": "Answered the roll call"
+      "lastActive": "2026-10-30T17:51:00-04:00",
+      "task": "Put a loading screen live"
     },
     {
       "name": "Mae Lynn",
       "role": "Personal helper",
       "zone": "VersaNext Lab",
       "color": "#FFB3D9",
-      "lastActive": "2026-10-28T22:05:00-04:00",
+      "lastActive": "2026-10-29T14:40:00-04:00",
       "task": "Answered the roll call"
     },
     {
@@ -73,7 +73,7 @@
       "role": "Amex card activity",
       "zone": "TSS office",
       "color": "#8AB4F8",
-      "lastActive": "2026-10-28T22:05:00-04:00",
+      "lastActive": "2026-10-30T08:08:00-04:00",
       "task": "Waiting for its first job"
     },
     {
@@ -81,16 +81,16 @@
       "role": "Field tech hour app",
       "zone": "TSS office",
       "color": "#8AB4F8",
-      "lastActive": "2026-10-28T23:25:00-04:00",
-      "task": "Waiting on an OK for an email"
+      "lastActive": "2026-10-30T17:53:00-04:00",
+      "task": "Shipped a server update"
     },
     {
       "name": "Mail Watch TSS",
       "role": "TSS inbox",
       "zone": "TSS office",
       "color": "#CBF0F8",
-      "lastActive": "2026-10-29T06:43:00-04:00",
-      "task": "Flagged new school service requests"
+      "lastActive": "2026-10-30T13:53:00-04:00",
+      "task": "Flagged a return pickup"
     },
     {
       "name": "TSS Receivables",
@@ -98,8 +98,7 @@
       "zone": "TSS office",
       "color": "#9CCC65",
       "lastActive": "2026-10-29T13:36:00-04:00",
-      "task": "Building the receivables site",
-      "status": "working"
+      "task": "Building the receivables site"
     },
     {
       "name": "Bill Pay",
@@ -114,72 +113,71 @@
       "role": "Personal money",
       "zone": "Finance",
       "color": "#F6AEA9",
-      "lastActive": "2026-10-28T22:04:00-04:00",
-      "task": "Answered the roll call"
+      "lastActive": "2026-10-30T08:08:00-04:00",
+      "task": "Answered the morning check-in"
     },
     {
       "name": "Hyperliquid Trader",
       "role": "Trading desk",
       "zone": "Finance",
       "color": "#FDE293",
-      "lastActive": "2026-10-29T07:04:00-04:00",
-      "task": "Reinstalled and tested the trading desk"
+      "lastActive": "2026-10-30T14:48:00-04:00",
+      "task": "Closed a trade"
     },
     {
       "name": "Calendar",
       "role": "Schedule and meetings",
       "zone": "Howard Sales",
       "color": "#D7AEFB",
-      "lastActive": "2026-10-28T22:05:00-04:00",
-      "task": "Answered the roll call"
+      "lastActive": "2026-10-30T08:08:00-04:00",
+      "task": "Answered the morning check-in"
     },
     {
       "name": "Order Tracker",
       "role": "Packages and orders",
       "zone": "Howard Sales",
       "color": "#A7FFEB",
-      "lastActive": "2026-10-28T22:04:00-04:00",
-      "task": "Answered the roll call"
+      "lastActive": "2026-10-30T17:16:00-04:00",
+      "task": "Checked the orders sheet"
     },
     {
       "name": "Mail Watch Howard",
       "role": "Howard inbox and sends",
       "zone": "Howard Sales",
       "color": "#F28B82",
-      "lastActive": "2026-10-29T07:27:00-04:00",
-      "task": "Flagged this morning's order reports"
+      "lastActive": "2026-10-30T18:04:00-04:00",
+      "task": "Passed a report to Southeast K12"
     },
     {
       "name": "CRM notes",
       "role": "Customer and deal notes",
       "zone": "Howard Sales",
       "color": "#FDB97D",
-      "lastActive": "2026-10-28T22:05:00-04:00",
-      "task": "Answered the roll call"
+      "lastActive": "2026-10-30T08:08:00-04:00",
+      "task": "Answered the morning check-in"
     },
     {
       "name": "Southeast K12",
       "role": "Howard K12 work",
       "zone": "Howard Sales",
       "color": "#FFAB91",
-      "lastActive": "2026-10-29T22:47:00-04:00",
-      "task": "Getting set up",
-      "status": "idle"
+      "lastActive": "2026-10-30T19:50:00-04:00",
+      "task": "Checking dashboard hosting costs"
     },
     {
       "name": "VersaNext",
       "role": "Security reviews of all apps",
       "zone": "VersaNext office",
       "color": "#78D9EC",
-      "lastActive": "2026-10-28T22:05:00-04:00",
-      "task": "Updated the employee portal"
+      "lastActive": "2026-10-30T19:47:00-04:00",
+      "task": "Planning a commission calculator"
     },
     {
       "name": "Script Shield",
       "role": "Protects app code",
       "zone": "VersaNext office",
       "color": "#B39DDB",
-      "lastActive": "2026-10-28T22:04:00-04:00",
+      "lastActive": "2026-10-29T14:40:00-04:00",
       "task": "Answered the roll call"
     },
     {
@@ -187,21 +185,20 @@
       "role": "Stress tests every app",
       "zone": "VersaNext office",
       "color": "#FDD663",
-      "lastActive": "2026-10-28T22:05:00-04:00",
-      "task": "Waiting on Fielder fixes"
+      "lastActive": "2026-10-29T14:41:00-04:00",
+      "task": "Answered the roll call"
     },
     {
       "name": "VersaNext CRM",
       "role": "VersaNext sales CRM",
       "zone": "VersaNext office",
       "color": "#80CBC4",
-      "lastActive": "2026-10-30T19:56:00-04:00",
-      "task": "Building the VersaNext CRM",
-      "status": "working"
+      "lastActive": "2026-10-30T19:58:00-04:00",
+      "task": "Building a keypad sign-in"
     }
   ],
   "meeting": {
-    "active": true,
+    "active": false,
     "title": "All-hands with Austin",
     "since": "2026-10-29T14:40:00-04:00",
     "attendees": [
